@@ -1,0 +1,204 @@
+.approach {
+  padding: 120px 20px;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.badge {
+  font-size: 60px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #0ea5e9, #84cc16);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+/* .subtitle {
+  margin: 0 auto 40px;
+  max-width: 1000px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: normal;
+  color: #333;
+  text-align: center;
+} */
+
+
+
+.approach-list {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+
+.row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.row.right {
+  justify-content: flex-start;
+}
+
+.row.left {
+  justify-content: flex-end;
+}
+
+
+.card {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 35px 45px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  background: #f8fafc;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+
+.blue-soft {
+  background: rgba(14,165,233,0.06);
+}
+
+.green-soft {
+  background: rgba(132,204,22,0.06);
+}
+
+
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0ea5e9;
+  transition: 0.3s ease;
+  flex-shrink: 0;
+}
+
+.card:hover .icon {
+  border-color: #84cc16;
+  color: #84cc16;
+}
+
+
+.number {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0ea5e9;
+  min-width: 70px;
+}
+
+
+.content {
+  text-align: left;
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.content p {
+  margin-top: 10px;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+
+.arrow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #e2e8f0;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 50%;
+}
+
+.row.right .arrow {
+  right: -30px;
+  transform: rotate(45deg);
+}
+
+.row.left .arrow {
+  left: -30px;
+  transform: rotate(-135deg);
+}
+
+
+.tech-visual {
+  position: absolute;
+  right: 5%;
+  top: 200px;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.floating-box {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #0ea5e9;
+  border-radius: 24px;
+  transform: rotate(15deg);
+}
+
+.floating-box.small {
+  width: 140px;
+  height: 140px;
+  border-color: #84cc16;
+  margin-top: 40px;
+  transform: rotate(-12deg);
+}
+
+
+@media (max-width: 1024px) {
+  .card {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    justify-content: center !important;
+  }
+
+  .card {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .badge {
+    font-size: 32px;
+  }
+}
